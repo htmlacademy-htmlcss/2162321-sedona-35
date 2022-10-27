@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Page */
+
+body {
+  font-family: "PT Sans", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Navigation */
+
+.navigation-list a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-user a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button-navigation-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+/* Promo */
+
+.main-page-promo {
+  background-image: url("../images/background-main.jpg");
+  background-color: #ffffff;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.page-promo-text h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-promo-text span {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/* Advantages */
+
+.advantages-title h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description p {
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-item:first-child {
+  background: #82B3D3;
+}
+
+.advantages-item:nth-child(2n) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:last-child {
+  background: #82B3D3;
+}
+
+/* Services */
+
+.services-item:first-child {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:last-child {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.services-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services-item p {
+  text-align: center;
+}
+
+/* Hotel-seach */
+
+.hotel-seach-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-seach {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.button-hotel-seach {
+  background: #756157;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Newsletter */
+
+.newsletter-page {
+  background-image: url("../images/footer-newsletter.jpg");
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.newsletter-form > input {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+
+  background: #F2F2F2;
+}
+
+/* Footer-page */
+
+.footer-contacts-telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Catalog */
+
+.inner-header {
+  background-image: url("../images/background-inner.jpg");
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* Catalog-filter */
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  line-height: 23px;
+}
+
+.control-label > input {
+  font-weight: 700;
+  line-height: 24px;
+  align-items: center;
+  color: #000000;
+}
+
+.button-filter-apply {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.button-filter-off {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Catalog-hotels */
+
+.catalog-filter-result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #000000
+}
+
+.hotel-card-filter hotel-card-price {
+  color: #333333;
+}
+
+.hotel-card-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  background: #756157;
+}
+
+.hotel-card-favorites {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  background: #82B3D3;
+}
+
+li:nth-child(2) .hotel-card-favorites {
+  background: #7DB54F;
+}
+
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+
+  background: #F2F2F2;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+
+  background: #82B3D3;
+}
+
+.pagination-item:first-child {
+  color: #000000;
+
+  background: #F2F2F2;
+}
+
+.pagination-item:nth-child(5) {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* Newsletter-page-inner */
+
+.newsletter-title-inner {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
