@@ -127,6 +127,7 @@ body {
   background-position-x: center;
   text-align: center;
   position: relative;
+  height: 482px;
 }
 
 div.main-page-promo::after {
@@ -144,7 +145,7 @@ img.main-page-promo {
 }
 
 .page-promo-text {
-  padding-top: 76px;
+  padding-top: 50px;
   padding-bottom: 88px;
   text-align: center;
 }
