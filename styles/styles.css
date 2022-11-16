@@ -108,7 +108,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
-  padding: 8px 50px;
+  padding: 8px 38px;
   border-radius: 4px;
 }
 
@@ -126,6 +126,17 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   text-align: center;
+  position: relative;
+}
+
+div.main-page-promo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/divider.png");
+  height: 57px;
 }
 
 img.main-page-promo {
@@ -133,8 +144,8 @@ img.main-page-promo {
 }
 
 .page-promo-text {
-  padding-top: 36px;
-  padding-bottom: 48px;
+  padding-top: 76px;
+  padding-bottom: 88px;
   text-align: center;
 }
 
@@ -276,8 +287,13 @@ h3.services-item {
   color: #FFFFFF;
   text-decoration: none;
   margin-top: 54px;
-  padding: 8px 50px;
   border-radius: 4px;
+  width: 376px;
+  height: 52px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Newsletter */
