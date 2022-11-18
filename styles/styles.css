@@ -37,6 +37,13 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+li {
+  list-style-type: none;
+}
+ul {
+  padding-left: 0;
+}
+
 /* Navigation */
 
 .navigation {
@@ -112,6 +119,10 @@ body {
   border-radius: 4px;
 }
 
+.button-navigation-item:hover {
+  background: #615048;
+}
+
 .main-container {
   flex-grow: 1;
   width: 1200px;
@@ -127,7 +138,6 @@ body {
   background-position-x: center;
   text-align: center;
   position: relative;
-  height: 482px;
 }
 
 div.main-page-promo::after {
@@ -284,6 +294,7 @@ h3.services-item {
 }
 
 .button-hotel-seach {
+  font-weight: 700;
   background: #756157;
   color: #FFFFFF;
   text-decoration: none;
@@ -382,6 +393,11 @@ h3.services-item {
   text-decoration: none;
 }
 
+.footer-contacts-telephone:hover,
+.footer-contacts-telephone:focus {
+  color: #756157;
+}
+
 /* Catalog */
 .hotel-list {
   display: grid;
@@ -476,6 +492,15 @@ h3.services-item {
   border-radius: 4px 0 0 4px;
 }
 
+.control-label input.field:hover {
+  background: #E6E6E6;
+}
+
+.control-label input.field:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
 .control-label input.field.price-to {
   border-radius: 0 4px 4px 0;
 }
@@ -545,6 +570,18 @@ h3.services-item {
   border-radius: 4px;
 }
 
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
 .sorting-buttons {
   display: flex;
   flex-direction: row;
@@ -572,6 +609,10 @@ h3.services-item {
   color: #000000
 }
 
+.hotel-card-link {
+  text-decoration: none;
+}
+
 .hotel-card-filter hotel-card-price {
   color: #333333;
 }
@@ -592,15 +633,24 @@ h3.services-item {
   background: #756157;
 }
 
+.hotel-card-more:hover,
+.hotel-card-more:focus {
+  background: #615048;
+}
+
 .hotel-card-favorites {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
-
   background: #82B3D3;
   width: 100%;
+}
+
+.hotel-card-favorites:hover,
+.hotel-card-favorites:focus {
+  background: #68A2CA;
 }
 
 li:nth-child(2) .hotel-card-favorites {
@@ -638,12 +688,17 @@ li:nth-child(2) .hotel-card-favorites {
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
-
   background: #82B3D3;
   display: block;
   width: 100%;
   padding: 12px 0;
   text-align: center;
+  text-decoration: none;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background: #68A2CA;
 }
 
 .pagination-item {
@@ -704,4 +759,193 @@ li:nth-child(2) .hotel-card-favorites {
 
 .footer-social-list {
   list-style-type: none;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 56px;
+  right: 52px;
+  width: 56px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal-header {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.modal-form {
+  display: grid;
+  grid-template-areas:
+    "check-in-label   check-in-field   check-in-field   check-in-field"
+    "check-out-label  check-out-field  check-out-field  check-out-field"
+    "adults-label     counters         counters         counters"
+    "submit           submit           submit           submit";
+  align-items: baseline;
+}
+
+.modal-form-check-in-label {
+  grid-area: check-in-label;
+}
+
+.modal-form-check-in-field {
+  grid-area: check-in-field;
+  position: relative;
+}
+
+.modal-form-check-out-label {
+  grid-area: check-out-label;
+}
+
+.modal-form-adults-label {
+  grid-area: adults-label;
+}
+
+.modal-form-adults-field {
+  grid-area: adults-field;
+}
+
+.modal-form-children-label {
+  grid-area: children-label;
+  margin-left: 116px;
+}
+
+.modal-form-submit {
+  grid-area: submit;
+  margin-top: 48px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.modal-form-counters {
+  grid-area: counters;
+  display: flex;
+  align-items: center;
+}
+
+.modal-form-check-out-field {
+  grid-area: check-out-field;
+  position: relative;
+}
+
+.modal-form-info,
+.modal-form-error {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.modal-form-error {
+  grid-area: error;
+  color: #FF5757;
+}
+
+.modal-form-info {
+  grid-area: info;
+  color: #333333;
+}
+
+.modal-form label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-right: 28px;
+}
+
+.modal-form input {
+  box-sizing: border-box;
+  padding: 12px 20px;
+  width: 440px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+}
+
+.modal-form img {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
+
+.modal-form-counters div {
+  display: flex;
+  align-items: center;
+}
+
+.modal-form-counter-control {
+  width: 47px;
+  height: 48px;
+  background: #F2F2F2;
+  color: rgba(117, 97, 87, 0.3);
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-form-counter-control:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.modal-form-counter-control:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+span.modal-form-counter-control {
+  width: 31px;
+  color: #000000;
+  border-radius: 0;
 }

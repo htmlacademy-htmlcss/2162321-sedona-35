@@ -3,15 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-    <style>
-      li {
-       list-style-type: none;
-      }
-      ul {
-       padding-left: 0;
-      }
-    </style>
   </head>
   <body>
     <header class="page-header">
@@ -32,12 +25,12 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/seach.svg" alt="Поиск по сайту.">
+              <img src="images/seach.svg" alt="Поиск по сайту." width="44" height="64">
             </a>
           </li>
           <li class="navigation-item favorites-countWrapper">
             <a class="navigation-link" href="#">
-              <img src="images/favorites.svg" alt="">
+              <img src="images/favorites.svg" alt="Раздел Избранное" width="20" height="20">
               <span class="visually-hidden">Избранное</span>
             </a>
             <span class="favorites-counter">12</span>
@@ -132,19 +125,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <img src="images/vk.svg" alt="" />
+              <img src="images/vk.svg" alt="Логотип Vkontatke" width="25" height="15" />
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <img src="images/twitter.svg" alt="" />
+              <img src="images/twitter.svg" alt="Логотип Twitter" width="18" height="16" />
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/youtube.svg" alt="" />
+              <img src="images/youtube.svg" alt="Логотип YouTube" width="23" height="18" />
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -156,8 +149,53 @@
       </section>
       <section>
         <a class="footer-logo visually-hidden" href="https://htmlacademy.ru/">Логотип html academy</a>
-        <img src="images/logo-htmlacademy.svg" alt="">
+        <img src="images/logo-htmlacademy.svg" alt="Логотип HTML-академии" width="115" height="34">
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <img src="images/close.svg" width="52" height="52" alt="Закрыть модальное окно">
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+            <!-- Check in fields-->
+            <label for="check-in" class="modal-form-check-in-label">Дата заезда:</label>
+            <div class="modal-form-check-in-field">
+              <input id="check-in" type="text" value="27 апреля 2020">
+              <span class="visually-hidden">Выбрать дату заезда</span>
+              <img src="images/calendar.svg" alt="Выбрать дату заезда" width="16" height="15">
+              <div class="modal-form-error">Мы не можем отправить вас в прошлое.</div>
+            </div>
+            <!-- Check out fields-->
+            <label for="check-out" class="modal-form-check-out-label">Дата выезда:</label>
+            <div class="modal-form-check-out-field">
+              <span class="visually-hidden">Выбрать дату выезда</span>
+              <input id="check-out" type="text" value="1 сентября 2023">
+              <img src="images/calendar.svg" alt="Выбрать дату выезда" width="16" height="15">
+              <div class="modal-form-info">На эти даты есть свободные номера. Пока есть.</div>
+            </div>
+            <!-- Adults count fields-->
+            <label class="modal-form-adults-label">Взрослые:</label>
+            <div class="modal-form-counters">
+              <div>
+                <button class="modal-form-counter-control">-</button>
+                <span class="modal-form-counter-control">2</span>
+                <button class="modal-form-counter-control">+</button>
+              </div>
+              <label class="modal-form-children-label">Дети:</label>
+              <div class="modal-form-children-field">
+                <button class="modal-form-counter-control">-</button>
+                <span class="modal-form-counter-control">2</span>
+                <button class="modal-form-counter-control">+</button>
+              </div>
+            </div>
+            <button class="modal-form-submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
