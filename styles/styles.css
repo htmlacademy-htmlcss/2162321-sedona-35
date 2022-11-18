@@ -19,7 +19,6 @@ html {
 }
 
 /* Page */
-
 body {
   margin: 0 auto;
   width: 1200px;
@@ -37,13 +36,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-li {
-  list-style-type: none;
-}
-ul {
-  padding-left: 0;
-}
-
 /* Navigation */
 
 .navigation {
@@ -59,6 +51,7 @@ ul {
   align-items: center;
   gap: 32px;
   margin-left: 42px;
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -73,6 +66,7 @@ ul {
 
 .navigation-user {
   margin-left: auto;
+  padding-left: 0;
 }
 
 .navigation-user a {
@@ -182,6 +176,7 @@ img.main-page-promo {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding-left: 0;
 }
 
 .advantages-title {
@@ -237,6 +232,7 @@ img.main-page-promo {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding-left: 0;
 }
 
 .services-item {
@@ -382,6 +378,7 @@ h3.services-item {
 .footer-social-list {
   display: flex;
   gap: 27px;
+  padding-left: 0;
 }
 
 .footer-contacts-telephone {
@@ -404,6 +401,8 @@ h3.services-item {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .hotel-card {
@@ -438,6 +437,8 @@ h3.services-item {
 .breadcrumbs {
   display: flex;
   gap: 11px;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 /* Catalog-filter */
@@ -465,6 +466,7 @@ h3.services-item {
   line-height: 23px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -681,6 +683,8 @@ li:nth-child(2) .hotel-card-favorites {
   border-top: 1px solid #E6E6E6;
   padding-top: 50px;
   margin-top: 50px;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .pagination-link {
@@ -759,6 +763,7 @@ li:nth-child(2) .hotel-card-favorites {
 
 .footer-social-list {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .modal-container {
