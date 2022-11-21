@@ -427,7 +427,7 @@ img.main-page-promo {
   height: 52px;
   border: none;
   border-radius: 0 4px 4px 0;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -452,7 +452,7 @@ img.main-page-promo {
   background: #F2F2F2;
   border: none;
   border-radius: 4px 0 0 4px;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -493,12 +493,12 @@ img.main-page-promo {
   opacity: 1;
 }
 
-.footer-academy-logo:hover svg path,
-.footer-academy-logo:focus svg path {
+.footer-academy-logo:hover path,
+.footer-academy-logo:focus path {
   fill: #756157;
 }
 
-.footer-academy-logo:active svg path {
+.footer-academy-logo:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -716,7 +716,7 @@ input.price-to {
 }
 
 .control-label > span {
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -818,7 +818,7 @@ input.price-to {
 
 .button-filter-apply {
   font-weight: 700;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -845,7 +845,7 @@ input.price-to {
 
 .button-filter-off {
   font-weight: 700;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   display: flex;
@@ -1147,17 +1147,17 @@ input.price-to {
   cursor: pointer;
 }
 
-.modal-close-button:hover svg circle {
+.modal-close-button:hover circle {
   fill: #E6E6E6;
 }
 
-.modal-close-button:focus svg circle {
+.modal-close-button:focus circle {
   fill: #E6E6E6;
   stroke: #83B3D3;
   stroke-width: 3;
 }
 
-.modal-close-button:active svg path {
+.modal-close-button:active path {
   opacity: 0.3;
 }
 
